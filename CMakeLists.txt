@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Rubix )
+find_package( OpenCV REQUIRED )
+add_executable( Rubix testVideoDevices.cpp )
+target_link_libraries( Rubix ${OpenCV_LIBS} )
+SET(CMAKE_CXX_FLAGS "-std=c++11")
